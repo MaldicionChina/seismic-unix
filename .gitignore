@@ -4,3 +4,6 @@
 *.gz
 *.dsc
 *.log
+*.deb
+*.changes
+*.substvars
