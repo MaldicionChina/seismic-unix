@@ -1,0 +1,6 @@
+*.tgz
+*.xz
+*.build
+*.gz
+*.dsc
+*.log

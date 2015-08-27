@@ -1,0 +1,26 @@
+
+Short guide to build Seismic Unix Package
+
+========================================
+
+Build source package
+--------------------
+
+Enter in the package folder.
+
+    $ cd seismic-unix/
+    
+
+If needed, add an entry to changelog.
+Add ~devX to the version if it's a development build.
+
+    $ dch -i
+
+Get the orig tarball:
+
+    $ debian/rules get-orig-source
+    
+Build the source package:
+
+    $ debuild -us -uc -b
+    
