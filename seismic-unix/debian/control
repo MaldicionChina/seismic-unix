@@ -2,14 +2,14 @@ Source: seismic-unix
 Section: math
 Priority: optional
 Maintainer: Alexis Enrique Rodríguez Gutiérrez <alexisrodgtz@gmail.com>
-Build-Depends: debhelper (>= 9), scons, dh-exec (>=0.3), libmotif-dev libxmu-dev libxi-dev gfortran libxt-dev libx11-dev x11proto-print-dev libxt6 libmotif4 freeglut3-dev
+Build-Depends: debhelper (>= 9), scons , dpatch, dh-exec (>=0.3), libmotif-dev, libxmu-dev, libxi-dev, gfortran, libxt-dev, libx11-dev, x11proto-print-dev, libxt6, libmotif4, freeglut3-dev
 Standards-Version: 3.9.5
 Homepage: http://www.cwp.mines.edu/
 
 Package: seismic-unix-base
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libcwp (= ${binary:Version})
-Description:  Seismic Unix is an open source seismic utilities package supported by the Center for Wave Phenomena (CWP) at the Colorado School of Mines (CSM).
+Description:  Seismic Unix is an open source seismic utilities package supported by the Center for Wave Phenomena (CWP) at the Colorado School of Mines (CSM). Include cwp, plot, su, X windows codes,Mesa/ Open GL items,libcwputils
  The Seismic Unix Project is partially supported by the CWP Consortium Project. 
  In the past, the Seismic Unix Project received partial support from the Gas 
  Research Institute (GRI) and the Society of Exploration Geophysicists Foundation

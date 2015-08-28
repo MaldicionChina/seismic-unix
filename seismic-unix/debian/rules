@@ -7,12 +7,15 @@ arch:=generic
 # to build the source into compiled programs and formatted
 # documents in the build-tree
 %:
-	dh $@
+	dh $@ --with dpatch
+
+override_dh_auto_clean:
+	rm -r lib include bin | true
 	
 override_dh_installdirs:
 	
 override_dh_auto_configure:	
-	cp src/configs/Makefile.config_$(arch) Makefile.config
+	cp src/configs/Makefile.config_$(arch) src/Makefile.config
 	
 override_dh_auto_build:
 	$(MAKE) -C src/ CWPROOT=$(shell pwd) install   #----  to install the cwp, plot, and su packages
