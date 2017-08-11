@@ -8,7 +8,7 @@ $ export DEBFULLNAME DEBEMAIL
 ```
 Para empaquetar el siguiente programa instalar:
 ```
-# apt-get install lintian dh-make devscripts debhelper build-essential scons dh-exec
+# apt-get install lintian dh-make devscripts debhelper build-essential scons dh-exec dpatch
 ```
 Para poder construir el los binarios desdes las fuentes es necesario instalar:
 ```

@@ -1,4 +1,4 @@
 #! /usr/bin/dh-exec
 
-lib/lib*.a usr/lib/cwp
-include/ usr/include/cwp
+lib/lib*.a /lib/cwp
+include/ /include/cwp
